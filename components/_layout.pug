@@ -1,0 +1,52 @@
+extends ../node_modules/pug-bootstrap/_bootstrap
+
+append styles
+	// Custom styles for this template
+	+bootswatch("lumen")
+	link(href='./css/layout.css', rel='stylesheet')
+block body
+	+navbar-fixed("PetVet","navbar","inverse", "http://localhost:8300/")
+		+nav_item("#") Dashboard
+		+nav_item("#") Settings
+		+nav_item("#") Profile
+		+nav_item("#") Help
+		form.navbar-form.navbar-right
+			input.form-control(type='text', placeholder='Search...')
+	.container-fluid
+		.row
+			.col-sm-3.col-md-2.sidebar
+				ul.nav.nav-sidebar
+					li.active
+						a(href='#')
+							| Overview
+							span.sr-only (current)
+					li
+						a(href='#') Pets
+					li
+						a(href='#') Allergies
+					li
+						a(href='#') Vaccination card
+					li
+						a(href='#') Exams
+					li
+						a(href='#') Treatments
+				ul.nav.nav-sidebar
+					li
+						a(href='') Add Pet
+					li
+						a(href='') Mark Exam
+					li
+						a(href='') Add Vaccine
+					li
+						a(href='') Add Vaccination
+
+				ul.nav.nav-sidebar
+					li
+						a(href='') Add Treatment
+					li
+						a(href='') View Treatments
+
+			.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+				block content
+
+

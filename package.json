@@ -1,0 +1,25 @@
+{
+  "name": "petvet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "describe": "^1.2.0",
+    "express": "^4.15.2",
+    "pug-bootstrap": "^0.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thamys/petvet.git"
+  },
+  "author": "Thamyres Guedes Corrêa <thataguedis@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thamys/petvet/issues"
+  },
+  "homepage": "https://github.com/thamys/petvet#readme"
+}
