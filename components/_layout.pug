@@ -48,5 +48,18 @@ block body
 
 			.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
 				block content
+append scripts
+	script(src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js")
+	script.
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyA4_PArBZ9jjmQR7ZfXKkRMf1fvx-eTUt4",
+			authDomain: "petvet-cb141.firebaseapp.com",
+			databaseURL: "https://petvet-cb141.firebaseio.com",
+			projectId: "petvet-cb141",
+			storageBucket: "petvet-cb141.appspot.com",
+			messagingSenderId: "400267141081"
+		};
+		firebase.initializeApp(config);
 
 
