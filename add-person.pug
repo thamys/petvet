@@ -1,0 +1,31 @@
+extends components/_layout
+
+block content
+    h1 Insert Person
+    form
+        +input("text", "username", "Username:",{
+            placeholder: "Insert your username",
+            name: "username",
+            required: true
+        })
+        +input("text", "password", "Password:",{
+            placeholder: "Insert your password",
+            name: "password",
+            required: true
+        })
+        +input("text", "name", "Name:",{
+            placeholder: "Insert your name",
+            name: "name",
+            required: true
+        })
+        +input("mail", "email", "Email:",{
+            placeholder: "Insert your email",
+            name: "email",
+            required: true
+        })
+        +input("phone-number", "phone-number", "Phone number:",{
+            placeholder: "Insert your phone number",
+            name: "phone-number",
+            required: true
+        })
+        +submit("Send", "insert-person", "btn-insert-person")

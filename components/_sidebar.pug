@@ -1,0 +1,30 @@
+.col-sm-3.col-md-2.sidebar
+    -var items =[]
+    -items.push({text:"Overview", href:"#"});
+    -items.push({text:"Pets", href:"#"});
+    -items.push({text:"Allergies", href:"#"});
+    -items.push({text:"Vaccination card", href:"#"});
+    -items.push({text:"Exams", href:"#"});
+    -items.push({text:"Treatments", href:"#"});
+
+    +nav("nav-sidebar",items,1)
+
+    -var items =[]
+    -items.push({text:"Add Pet", href:"add-pets"});
+    -items.push({text:"Mark Exam", href:"#"});
+    -items.push({text:"Add Vaccine", href:"#"});
+    -items.push({text:"Add Vaccination", href:"#"});
+
+    +nav("nav-sidebar",items,"")
+
+    -var items =[]
+    -items.push({text:"Add Treatment", href:"#"});
+    -items.push({text:"View Treatments", href:"#"});
+
+    +nav("nav-sidebar",items,"")
+
+    -var items =[]
+    -items.push({text:"Add Person", href:"add-person"});
+    -items.push({text:"View Persons", href:"#"});
+
+    +nav("nav-sidebar",items,"")

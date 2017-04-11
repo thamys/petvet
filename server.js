@@ -20,5 +20,19 @@ app.get('/',
     }
 );
 
+app.get('/add-pet',
+    function(request, response){
+        response.writeHead(200, {"Content-Type": "text/html"});
+        response.end(pug.renderFile('add-pet.pug', {}));
+    }
+);
+
+app.get('/add-person',
+    function(request, response){
+        response.writeHead(200, {"Content-Type": "text/html"});
+        response.end(pug.renderFile('add-person.pug', {}));
+    }
+);
+
 
 console.log("Servidor está ON no endereço localhost:8300");

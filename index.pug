@@ -21,6 +21,20 @@ block content
             span.text-muted Something else
     h2.sub-header Section title
     .table-responsive
+        -var header = ['#','Header1', 'Header2','Header3', 'Header4']
+        -var data = []
+        - data.push(['1,001','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,002','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,003','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,004','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,005','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,006','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,007','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,008','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,009','Lorem', 'ipsum','dolor', 'sit'])
+        - data.push(['1,010','Lorem', 'ipsum','dolor', 'sit'])
+        +table-striped(header,data)
+
         table.table.table-striped
             thead
                 tr
